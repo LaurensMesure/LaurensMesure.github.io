@@ -1,0 +1,642 @@
+/* CSS Document */
+
+@font-face {font-family: college; src: url('../fonts/college.ttf');}
+@font-face {font-family: hacked; src: url('../fonts/HACKED.ttf');}
+@font-face {font-family: osaka; src: url(../fonts/osaka.ttf);}
+@font-face {font-family: japanese; src: url(../fonts/go3v2.ttf);}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+#mainWindow{
+	overflow: hidden;
+}
+
+.offset{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.loader {
+	z-index: 3;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+#backdrop {
+	z-index: 2;
+	background-color: rgba(69,69,69,0.40);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}
+
+.tranform{
+	display: inline-block;
+	-webkit-transform: skew(-28.3deg);
+	   -moz-transform: skew(-28.3deg);
+	     -o-transform: skew(-28.3deg);
+	overflow: hidden;
+}
+
+#education{
+	width: 31.5vw;
+	height:100vh;
+	margin-left: -14vw;
+}
+
+#educationimg{
+	-webkit-transform: skew(28.3deg);
+	   -moz-transform: skew(28.3deg);
+		 -o-transform: skew(28.3deg);
+	height: 100%;
+	width: 100%;
+	margin-left: 27vh;
+	background: url("../img/Educatoin.png");
+}
+
+#educationimg:hover{
+	-webkit-transform: skew(28.3deg);
+	   -moz-transform: skew(28.3deg);
+		 -o-transform: skew(28.3deg);
+	height: 100%;
+	width: 100%;
+	margin-left: 27.3vh;
+	background: url("../img/EducatoinColor.png");
+}
+
+#programming{
+	width: 23vw;
+	height:100vh;
+	margin-left: -0.15vw;
+}
+
+#programmingimg{
+	-webkit-transform: skew(28.3deg);
+	   -moz-transform: skew(28.3deg);
+		 -o-transform: skew(28.3deg);
+	height: 100vh;
+	width: 100vw;
+	margin-left: -16vw;
+	background: url("../img/Programming.png");
+}
+
+#programmingimg:hover{
+	margin-left: -16.245vw;
+	background: url("../img/ProgrammingColor.png");
+}
+
+#karate{
+	width: 23.1vw;
+	height:100vh;
+}
+
+#karateimg{
+	transform: skew(28.3deg);
+	height: 100vh;
+	width: 100vw;
+	margin-left: -16.5vw;
+	background: url("../img/Karate.png");
+}
+
+#karateimg:hover{
+	background: url("../img/KarateColor.png");
+}
+
+#fitness{
+	width: 23.1vw;
+	height:100vh;
+	margin-left: -0.3vw;
+}
+
+#fitnessimg{
+	-webkit-transform: skew(28.3deg);
+	-moz-transform: skew(28.3deg);
+	-o-transform: skew(28.3deg);
+	height: 100vh;
+	width: 100vw;
+	margin-left: -31.9vh;
+	background: url("../img/Fitness.png");
+}
+
+#fitnessimg:hover{
+	background: url("../img/FitnessColor.png");
+}
+
+#netflix{
+	position: absolute;
+	width: 28vw;
+	height:100vh;
+	margin-left: -0.6vw;
+}
+
+#netfliximg{
+	-webkit-transform: skew(28.3deg);
+	-moz-transform: skew(28.3deg);
+	-o-transform: skew(28.3deg);
+	height: 100vh;
+	width: 100vw;
+	margin-left: -31.9vh;
+	background: url("../img/Netflix.png");
+}
+
+#netfliximg:hover{
+	background: url("../img/NetflixColor.png");
+}
+
+/* ============ EDUCATION STYLES ============ */
+
+#banner{
+	padding: 10px 0px;
+	height: 50vh;
+	width: 100%;
+	background-color: #f2717a;
+}
+
+#banner img{
+	height: 50vh;
+	background-color: #f2717a;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+		
+}
+
+#schoolimg{
+	margin: 7vh auto 15vh;
+	display: block;
+	width: 35em;
+}
+
+
+#bookimg{
+	float: left;
+	margin: -3vh 0 0 10vh;
+}
+
+#content p{
+	float: right;
+	width: 45vw;
+	margin: 0 20vh 15vh 0;
+	font-size: 2em;
+	font-family: Microsoft Yi Baiti, sans-serif;
+	color: #2c3e50;
+
+}
+
+#educationFooter{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: -330px;
+}
+
+/* ============ PROGRAMMING STYLES ============ */
+
+#programmingBody{
+	background-image: url("../img/programmingBackground.png");
+	background-repeat: no-repeat;
+	color: white;
+	position: relative;
+	font-family: Microsoft Yi Baiti, sans-serif;
+	height: 90vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+#programmingBody h1{
+	font-family: hacked, sans-serif;
+	font-size: 12.5em;
+	margin-top: 9vh;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#programmingBody p{
+	font-size: 1.98em;
+	padding: 0 10px 0 10px;
+}
+
+#programmingBody ul{
+	margin: -2vh 0 0 2vw;
+}
+
+#programmingBody ul li{
+	font-size: 1.98em;
+	margin-bottom: 0.5vh;
+}
+
+#programmingButton{
+	z-index: 3;
+	position: absolute;
+	margin-top: 5%;
+	width: 7vh;
+	height: 7vh;
+	text-align: center;
+	vertical-align: middle;
+	background-color: black;
+	border: solid 1px white;
+}
+
+#programmingButton p{
+	font-size: 1.5em;
+}
+
+#glitch{
+	z-index: 2;
+	position:fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-image: url("../img/ProgrammingGlitch.gif");
+	background-size: cover;
+}
+
+.button{
+	z-index: 3;
+	color: white;
+	background-color: #191919;
+	border: 1px solid white;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.7em;
+	margin: 4px 2px 0;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	margin-left: 94vw;
+}
+
+/* ============ KARATE STYLES ============ */
+#karateMainImage{
+	overflow: hidden;
+	height: 100vh;
+	background-image: url("../img/KarateWallpaperMountain.jpg");
+	background-size: cover;
+	text-align: center;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#karateMainImage h1{
+	font-family: osaka;
+	font-size: 13em;
+	color: white;
+	vertical-align: middle;
+	display: none;
+}
+
+#wedstrijden{
+	text-align: center;
+}
+
+#wedstrijden h2{
+	font-family: college, sans-serif;
+	font-size: 6.5em;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 15vh;
+}
+
+#wedstrijden p{
+	font-family: Microsoft Yi Baiti, sans-serif;
+	font-size: 2em;
+	word-spacing: 11px;
+}
+
+#karateSubBanner{
+	background-image: url(../img/KarateWallpaper.jpg);
+	background-attachment: fixed;
+	height: 65vh;
+}
+
+#karateInfo{
+	padding-top: 4vh;
+	text-align: center;
+	font-family: Microsoft Yi Baiti, sans-serif;
+	font-size: 2em;
+	word-spacing: 11px;
+}
+
+#karateInfo ul li{
+	word-spacing: 2px;
+	display: inline-table;
+	margin: 0 6vw;
+}
+
+#gordels{
+	margin-top: 30vh;
+	text-align: left;
+	word-spacing: 0px;
+}
+
+#gordels h2{
+	text-align: center;
+	font-family: college, sans-serif;
+	font-size: 3em;
+}
+
+#emKarate{
+	font-family: japanese, sans-serif;
+}
+
+#gordels p{
+	margin-left: 20px;
+	
+}
+
+#gordels ol{
+	margin-left: 20px;
+}
+
+#gordels ol li{
+	margin-left: -3.1vw;
+	list-style-type: none;
+	height: 4vh;
+}
+
+#wit{
+	color: black;
+	border-top: 1px solid black;
+}
+#geel{
+	color: black;
+	background-color: #e9d460;
+}
+#oranje{
+	color: white;
+	background-color: #f9690e;
+}
+#groen{
+	color: white;
+	background-color: #3fc380;
+}
+#blauw{
+	color: white;
+	background-color: #1e8bc3;
+}
+#bruin{
+	color: white;
+	background-color: #9e6d4d;
+}
+#zwart{
+	color: white;
+	background-color: black;
+}
+
+#footer{
+	font-size: 0.6em;
+	word-spacing: 0;
+	text-align: center;
+}
+
+/* ============ NETFLIX STYLES ============ */
+#netflixLoader{
+	position: absolute;
+	z-index: 1;
+	background: url(../img/NetflixLoaderBackground.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	overflow: hidden;
+}
+
+#netflixLoader img{
+	margin-top: 40vh;
+}
+
+#netflixBody{
+	background-color: black;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+#netflixBody a,
+#netflixBody a:focus{
+	color: white;
+}
+
+#netflixWrapper{
+	display: none;
+	color: white;
+}
+
+#menuBar{
+	display: inline-block;
+	position:fixed;
+	z-index: 3;
+	width: 100vw;
+	min-width: 400px;
+	max-width: 100vw;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.4em;
+	padding-top: 2vh;
+}
+
+#menuBar img{
+	float: left;
+	margin-left: 3vw;
+	width: 120px;
+}
+
+#menuBar ul li{
+	float: left;
+	padding: 0 10px 20px 20px;
+	margin-top: -16px;
+	list-style-type: none;
+}
+
+#netflixBanner{
+	background-image: url(../img/NetflixBanenr.png);
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 74vh;
+	z-index: 0;
+}
+
+#netflixBanner h2{
+	margin-top:0;
+	font-family: college, sans-serif;
+	font-size: 5em;
+	padding-top: 13vh;
+	margin-left: 3vw;
+}
+
+#netflixBanner p{
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	width: 45vw;
+	min-width: 530px;
+	margin-left: 3vw;
+}
+
+#afspelen{
+	background-color: #141414;
+	background-image: url(../img/play.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 10px;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 1.5em;
+	font-wight: bold;
+	padding: 10px 20px 10px 50px;
+	border: 0px;
+	margin-left: 3vw;
+	margin-top: 14vh;
+}
+
+#netflixContent{
+	position: absolute;
+	background-color: #141414;
+	font-family: Arial, sans-serif;
+	font-weigth: bold;
+	font-size: 1.1em;
+	z-index: 1;
+	width: 100vw;
+}
+
+
+#netflixContent h2{
+	margin-left: 3vw;
+}
+
+#netflixContent ul{
+	padding: 0;
+	margin-left: 3vw;
+}
+
+#netflixContent ul li{
+	list-style-type: none;
+	display: inline-block;
+	width: 300px;
+}
+
+#posters{
+	margin-top: 5vh;
+}
+
+/* ============ FITNESS STYLES ============ */
+#fitnessBody{
+	margin: 0;
+}
+
+#firstPage{
+	height: 100vh;
+	width: 100%;
+	background-color: #ED8428;
+}
+
+#firstPage{
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/fitnessBackground.png");
+	background-size: cover;
+	text-align: center;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#firstPage h1{
+	text-align: center;
+	color: white;
+	font-family: college, sans-serif;
+	font-size: 18vh;
+	padding-top: 5vh;
+	padding-right: 2vw;
+	font-weight: 100;
+}
+
+#fitnessBody ul{
+	position: fixed;
+	color: white;
+	right: 20px;
+	font-size: 5vh;
+	list-style-type: none;
+	z-index: 2;
+	height: 100vh;
+	margin: 0;
+	margin-top: 400px;
+}
+
+#fitnessBody ul a,
+#fitnessBody ul a:focus,
+#fitnessBody ul a:hover{
+	color: white;
+}
+
+#fitnessBody ul a li{
+	background-image: url(../img/bulletPoint.png);
+	background-size: contain;
+	width: 15px;
+	height: 15px;
+	margin-bottom: 2vh;
+	margin-right: 2vw;
+} 
+
+.activePoint{
+	background-image: url(../img/bulletPointActive.png)!important; 
+}
+
+#secondPage{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/FitnessWallpaper.jpg);
+	background-attachment: fixed;
+}
+
+#thirthPage{
+	width: 100%;
+	height: 100vh;
+	background-color: salmon;
+}
+
+#fourthPage{
+	width: 100%;
+	height: 100vh;
+	background-color: #16D343;
+}
+
+#fifthPage{
+	width: 100%;
+	height: 100vh;
+	background-color: skyblue;
+}
+
+#fitnessFooter{
+	float: left;
+}

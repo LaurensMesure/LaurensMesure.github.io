@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Laurens Mesure: Opdracht Webdesign</title>
+	
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	<link href="CSS/loaders.min.css" rel="stylesheet" type="text/css" />
+	<link href="education.html" />
+	<link href="programming.html" />
+	<link href="karate.html" />
+	<link href="netflix.html" />
+	<link href="fitness.html" />
+	
+	<!-- JavaScript files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Preloader Script -->
+	<script>		
+		$(window).on('load', function(e){
+			$(".loader, #backdrop").fadeOut(1000);
+		});
+	</script>
+	<!-- End Preloader Script -->
+	
+	<script src="JavaScript/custom.js"></script>
+</head>
+
+<body id="mainWindow" class="offset">
+	
+	<!-- Preloader -->
+	<div class="loader"> 
+		<div class="loader-inner pacman">
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		  <div></div>
+		</div>
+	</div>
+	
+	
+	<span id="backdrop"></span>
+	
+	<!-- End preloader -->
+	
+	<div id="education" class="tranform">
+		<a href="education.html">
+			<div id="educationimg">
+				<!-- education image set with CSS -->
+			</div>
+		</a>
+	</div>
+	<div id="programming" class="tranform">
+		<a href="programming.html">
+			<div id="programmingimg">
+				<!-- programming image set with CSS -->
+			</div>
+		</a>
+	</div>
+	<div id="karate" class="tranform">
+		<a href="karate.html">
+			<div id="karateimg">
+				<!-- karate image set with CSS -->
+			</div>
+		</a>
+	</div>
+	<div id="fitness" class="tranform">
+		<a href="fitness.html">
+			<div id="fitnessimg">
+				<!-- fitness image set with CSS -->
+			</div>
+		</a>
+	</div>
+	<div id="netflix" class="tranform">
+		<a href="netflix.html">
+			<div id="netfliximg">
+				<!-- netflix image set with CSS -->
+			</div>
+		</a>
+	</div>
+	
+</body>
+</html>
