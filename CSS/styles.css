@@ -289,6 +289,14 @@
 	margin-left: 94vw;
 }
 
+#programmingFooter{
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+}
+
 /* ============ KARATE STYLES ============ */
 #karateMainImage{
 	overflow: hidden;
