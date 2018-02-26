@@ -14,7 +14,7 @@
 
 ::-webkit-scrollbar
 {
-	width: 12px;
+	width: 5px;
 	background-color: #F5F5F5;
 }
 
@@ -551,6 +551,8 @@
 /* ============ FITNESS STYLES ============ */
 #fitnessBody{
 	margin: 0;
+	font-size: 0;
+	padding: 0;
 }
 
 #firstPage{
@@ -622,21 +624,115 @@
 #thirthPage{
 	width: 100%;
 	height: 100vh;
-	background-color: salmon;
+	font-size: 60px; /* fallback */
+	font-size: 7vh;
+	font-family: college, serif;
+	text-align: center;
+}
+
+#thirthPage h1{
+	padding:0;
+	margin: 0;
+	padding-top: 80px;
+	font-weight: 100;
+	word-spacing: 5px;
+}
+
+#thirthPage img {
+	float: left;
+	padding-top: 200px;
+	padding-left: 60px;
+}
+
+#thirthPage p{
+	font-family: Microsoft Yi Baiti, serif;
+	font-size: 40px; /* fallback */
+	font-size: 4vh;
+	text-align: left;
+	max-width: 900px;
+	float: right;
+	padding-top: 10vh;
+	padding-right: 100px;
 }
 
 #fourthPage{
 	width: 100%;
 	height: 100vh;
-	background-color: #16D343;
+	font-size: 60px;
+	font-size: 7vh;
+	background-color: #34495e;
+	font-family: college, serif;
+	color: white;
+}
+
+#fourthPage h1{
+	margin: 0;
+	padding: 0;
+	padding-left: 70px;
+	padding-top: 50px;
+	font-weight: 100;
+}
+
+#fourthPage p{
+	font-family: Microsoft Yi Baiti, serif;
+	font-size: 40px;
+	font-size: 4vh;
+	max-width: 950px;
+	float: left;
+	padding-top: 20vh;
+	margin-left: 4vw;
+}
+
+#fourthPage img{
+	max-height: 55vh;
+	float: right;
+	padding: 10vh 10vw 0 0;
 }
 
 #fifthPage{
 	width: 100%;
 	height: 100vh;
-	background-color: skyblue;
+	background-color: #2f3542;
+	font-size: 40px;
+	color: white;
+}
+
+#fifthPage table{
+	font-family: Arial, serif;
+	font-weight: 100;
+	padding-top: 10vh;
+	padding-left: 3vw;
+}
+
+#fifthPage table th{
+	font-family: Arial, serif;
+	font-weight: 100;
+	padding-left: 3vw;
+	padding-bottom: 5vh;
+}
+
+#fifthPage table td{
+	text-align: center;
+	padding-left: 3vw;
+	padding-bottom: 5vh;
+}
+
+#fifthPage p{
+	font-family: Microsoft Yi Baiti, serif;
+	font-size: 4vh;
+	color: white;
+	max-width: 55vw;
+	float: left;
+	padding: 5vh 0 0 5vw;
+}
+
+#fifthPage img{
+	float: right;
+	max-height: 40vh;
+	padding: 5vh 15vw 0 0;
 }
 
 #fitnessFooter{
-	float: left;
+	font-size: 2vh!important;
+	margin-top: 12vh!important;
 }
