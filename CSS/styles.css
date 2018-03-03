@@ -72,6 +72,7 @@
 	width: 100%;
 	margin-left: 27vh;
 	background: url("../img/Educatoin.png");
+	background-size: 100%;
 }
 
 #educationimg:hover{
@@ -82,6 +83,7 @@
 	width: 100%;
 	margin-left: 27.3vh;
 	background: url("../img/EducatoinColor.png");
+	background-size: 100%;
 }
 
 #programming{
@@ -164,6 +166,16 @@
 }
 
 /* ============ EDUCATION STYLES ============ */
+#wrapper{
+	height: 100%;
+}
+
+#back{
+	top: 0;
+	z-index: 4;
+	position: fixed;
+	margin: 3vh 1vw;
+}
 
 #banner{
 	padding: 10px 0px;
@@ -185,12 +197,14 @@
 	margin: 7vh auto 15vh;
 	display: block;
 	width: 35em;
+	max-width: 90vw;
 }
 
 
 #bookimg{
 	float: left;
 	margin: -3vh 0 0 10vh;
+	max-width: 90vw;
 }
 
 #content p{
@@ -204,10 +218,12 @@
 }
 
 #educationFooter{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	text-align: center;
-	width: 100%;
-	position: absolute;
-	bottom: -330px;
+	display: none;
 }
 
 /* ============ PROGRAMMING STYLES ============ */
@@ -350,6 +366,10 @@
 	word-spacing: 11px;
 }
 
+#karateInfo img{
+	max-width: 90vw;
+}
+
 #karateInfo ul li{
 	word-spacing: 2px;
 	display: inline-table;
@@ -378,11 +398,11 @@
 }
 
 #gordels ol{
-	margin-left: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 #gordels ol li{
-	margin-left: -3.1vw;
 	list-style-type: none;
 	height: 4vh;
 }
@@ -523,7 +543,7 @@
 	padding: 10px 20px 10px 50px;
 	border: 0px;
 	margin-left: 3vw;
-	margin-top: 14vh;
+	margin-top: 16vh;
 }
 
 #netflixContent{
@@ -554,6 +574,16 @@
 
 #posters{
 	margin-top: 5vh;
+}
+
+#netflixFooter{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 1.3vh;
+	color: #4D4D4D;
+
 }
 
 /* ============ FITNESS STYLES ============ */
@@ -597,16 +627,8 @@
 	right: 20px;
 	font-size: 5vh;
 	list-style-type: none;
-	z-index: 2;
-	height: 100vh;
-	margin: 0;
-	margin-top: 400px;
-}
-
-#fitnessBody ul a,
-#fitnessBody ul a:focus,
-#fitnessBody ul a:hover{
-	color: white;
+	z-index: 4;
+	margin-top: 40vh;
 }
 
 #fitnessBody ul a li{
@@ -617,10 +639,6 @@
 	margin-bottom: 2vh;
 	margin-right: 2vw;
 } 
-
-.activePoint{
-	background-image: url(../img/bulletPointActive.png)!important; 
-}
 
 #secondPage{
 	width: 100%;

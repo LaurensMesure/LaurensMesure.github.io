@@ -1,4 +1,36 @@
 // JavaScript Document
+
+//  fade footer in on bottom
+$(window).scroll(function() {
+	"use strict";
+   if($(window).scrollTop() + $(window).height() === $(document).height()) {
+       $("#educationFooter").fadeIn(200);
+   }
+	else{
+		$("#educationFooter").fadeOut(200);
+	}
+});
+
+// change bullet in fitness page
+
+$(document).on('scroll', function(){
+	"use strict";
+	event.preventDefault();
+	
+	$("html, body").animate({
+		scrollTop: $("#fitnessBody").parent().next().find(".wholePage").offset().top
+	}, 500);
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+	"use strict";
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 // toggle programming effect on and off
 $(function(){
 	"use strict";
@@ -13,11 +45,13 @@ $(document).ready(function(){
 	$("#karateHeader").fadeIn(1000);
 });
 
+// karate: fade the "Karate" text out
 $(window).scroll(function(){
 	"use strict";
 	$("#karateHeader").css("opacity", 1 - $(window).scrollTop() / 350);
 });
 
+// Netflix: fade the netflix menu bar background in
 $(document).ready(function(){  
 	"use strict";
         $(window).scroll(function(){                          
